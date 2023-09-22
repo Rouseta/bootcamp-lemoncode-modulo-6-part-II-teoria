@@ -30,6 +30,7 @@ console.log(search(array, 0));
 console.log(array.indexOf(1));
 var myString = "casa";
 console.log(myString.indexOf("s"));
+//B. Búsqueda binaria
 
 
 
