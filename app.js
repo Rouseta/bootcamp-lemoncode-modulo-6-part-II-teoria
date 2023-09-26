@@ -10,11 +10,10 @@ var getRandomRounded = (a, b) => (Math.round(Math.random()) ? a : b);
 //Empecemos por un caso sencillo, por ejemplo, sacar un número aleatorio del 0 al 9.
 //console.log(Math.floor(Math.random() * 10));// floor entero más cercano por debajo
 //Ahora un caso cuyo mínimo no sea un 0. En lugar del 0 al 9, busquemos un aleatorio entre 50 y 100 por ejemplo.
-//const range = 200 - 100 + 1
-//console.log("range", range)
+//const range = 100 - 50 + 1//console.log("range", range)
 //console.log(Math.floor(Math.random() * range));
 //Nos faltaría por tanto, sumar a nuestro resultado el mínimo que queremos, que en nuestro caso es 50, por tanto:
-//console.log(Math.floor(Math.random() * range) + 100) // Números aleatorios enteros en el rango [50, 100]
+//console.log(Math.floor(Math.random() * range) + 50) // Números aleatorios enteros en el rango [50, 100]
 
 //2. Algorítmos de búsqueda
 //A Busqueda Secuencial o Lineal
