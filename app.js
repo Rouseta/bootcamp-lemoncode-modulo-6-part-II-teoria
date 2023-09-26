@@ -17,7 +17,7 @@ var getRandomRounded = (a, b) => (Math.round(Math.random()) ? a : b);
 
 //2. Algorítmos de búsqueda
 //A Busqueda Secuencial o Lineal
-var array = [1, 1, 3, 4, 5, 2, 9, 6, 7, 8];
+var array = [1, 3, 4, 5, 2, 9, 6, 7, 8];
 var search = (array, target) => {
     for (var i = 0; i < array.length; i++) {
         if (array[i] === target) return i;
@@ -25,7 +25,7 @@ var search = (array, target) => {
     return -1;
 };
 
-// console.log(search(array, 0));
+console.log(search(array, 1));
 // console.log(array.indexOf(1));
 var myString = "casa";
 //console.log(myString.indexOf("s"));
@@ -36,7 +36,7 @@ var binarySearch = (sortedArray, target) => {
     var max = array.length - 1;
     while (min <= max) {
         var mid = min + Math.floor((max - min) / 2);
-        console.log(mid)
+        //console.log(mid)
         if (array[mid] === target) return mid;
         else if (array[mid] < target) min = mid + 1;
         else max = mid - 1;
@@ -44,7 +44,7 @@ var binarySearch = (sortedArray, target) => {
     return -1;
 };
 var sortedArray = [11, 15, 32, 34, 36, 37, 75, 79, 80, 89];
-console.log(binarySearch(sortedArray, 34));
+//console.log(binarySearch(sortedArray, 34));
 
 // 3.Algoritmos de ordenación
 //Vamos a introducir tres técnicas de ordenación:
@@ -71,7 +71,7 @@ var bubbleSort = array => {
     }
     return array; // Devuelve el array ordenado
 };
-console.log(bubbleSort([3, 5, 1, 8, 7, 2]));
+//console.log(bubbleSort([3, 5, 1, 8, 7, 2]));
 //B. Selection Sort u ordenación por selección
 // Este algoritmo consiste en buscar el mínimo elemento entre una posición i y el final de la lista.
 // Es decir, en nuestra la lista de ejemplo [3, 5, 1, 8, 7, 2] :
@@ -112,7 +112,7 @@ var insertionSort = array => {
     }
     return array;
 };
-console.log(insertionSort([3, 5, 1, 8, 7, 2]));
+//console.log(insertionSort([3, 5, 1, 8, 7, 2]));
 
 
 
